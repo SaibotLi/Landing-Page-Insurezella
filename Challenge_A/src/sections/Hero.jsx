@@ -2,7 +2,7 @@ import { heroImg } from "../images";
 
 const Hero = () => {
   return (
-    <div
+    <section
       id="home"
       className="flex flex-col md:flex-row items-center bg-gray-300 mb-4"
     >
@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="w-full md:w-1/2 p-4">
         <img src={heroImg} className="w-full h-auto" />
       </div>
-    </div>
+    </section>
   );
 };
 

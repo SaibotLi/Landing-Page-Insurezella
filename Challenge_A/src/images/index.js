@@ -6,5 +6,17 @@ import icon3 from "./icon3.png";
 import icon4 from "./icon4.png";
 import icon5 from "./icon5.png";
 import aboutUsImg from "./committed-help.png";
-
-export { logo, heroImg, icon1, icon2, icon3, icon4, icon5, aboutUsImg };
+import iconAbout1 from "./iconAbout1.png";
+import iconAbout2 from "./iconAbout2.png";
+export {
+  logo,
+  heroImg,
+  icon1,
+  icon2,
+  icon3,
+  icon4,
+  icon5,
+  aboutUsImg,
+  iconAbout1,
+  iconAbout2,
+};

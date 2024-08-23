@@ -17,7 +17,7 @@ const FindInsurance = () => {
   };
 
   return (
-    <div>
+    <section>
       {/* Mobile View: Carousel */}
       <div className="block lg:hidden p-6">
         <Slider {...settings}>
@@ -66,7 +66,7 @@ const FindInsurance = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
