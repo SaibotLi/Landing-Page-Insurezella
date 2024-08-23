@@ -28,19 +28,30 @@ const NavBar = () => {
         {/* Middle Nav Items */}
         <ul className="flex space-x-4">
           <li>
-            <a href="#home">Home</a>
+            <a href="#home" className="hover:text-blue-600 hover:underline">
+              Home
+            </a>
           </li>
           <span>|</span>
           <li>
-            <a href="#findInsurance">Find Insurance &#9662;</a>
+            <a
+              href="#findInsurance"
+              className="hover:text-blue-600 hover:underline"
+            >
+              Find Insurance &#9662;
+            </a>
           </li>
           <span>|</span>
           <li>
-            <a href="#learn">Learn</a>
+            <a href="#learn" className="hover:text-blue-600 hover:underline">
+              Learn
+            </a>
           </li>
           <span>|</span>
           <li>
-            <a href="#about">About</a>
+            <a href="#about" className="hover:text-blue-600 hover:underline">
+              About
+            </a>
           </li>
         </ul>
 
