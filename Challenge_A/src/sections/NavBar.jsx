@@ -10,7 +10,7 @@ const NavBar = () => {
           <div>
             <span> &#9993; Mail us: support@insurezella.com </span>
             {/* &#9993; = Unicode for Mail */}
-            <span className="ml-4"> &#9742; Call us: (877) 327 0774</span>
+            <span className="ml-8"> &#9742; Call us: (877) 327 0774</span>
             {/* &#9742; = Unicode for Telephone */}
           </div>
         </div>
@@ -19,7 +19,7 @@ const NavBar = () => {
       {/* Lower-Nav */}
       <nav className="sticky top-0 z-50 bg-gray-100 flex items-center justify-between px-4 py-4">
         {/* Left Logo */}
-        <div className="flex-shrink-0 ml-20">
+        <div className="flex-shrink-0 ml-28">
           <a href="#home">
             <img src={logo} alt="Logo" className="h-auto w-16 rounded-lg" />
           </a>
@@ -45,8 +45,8 @@ const NavBar = () => {
         </ul>
 
         {/* Right Button */}
-        <div className="flex-shrink-0 mr-20">
-          <button className="bg-blue-600 rounded-full text-white font-semibold py-3 px-5">
+        <div className="flex-shrink-0 mr-28">
+          <button className="bg-blue-600 rounded-full text-white font-semibold py-4 px-4 shadow-lg shadow-gray-400">
             Call Us Now -&#9654;
           </button>
           {/* &#9654; UniCode for Right Arrow */}
