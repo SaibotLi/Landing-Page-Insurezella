@@ -15,15 +15,38 @@ const NavBar = () => {
       {/* Upper-Nav */}
       <div className="bg-blue-500 p-3">
         <div className="flex items-center text-center justify-around text-white">
-          <a className="lg:hidden sm:flex" href="#home">
+          <a className="lg:hidden flex" href="#home">
             <img src={logo} alt="Logo" className="h-auto w-60" />
           </a>
-          <p className="font-semibold text-xl">Want to Connect with us?</p>
+          {/* Mobile menu */}
           <div>
-            <span> &#9993; Mail us: support@insurezella.com </span>
-            {/* &#9993; = Unicode for Mail */}
-            <span className="ml-8"> &#9742; Call us: (877) 327 0774</span>
-            {/* &#9742; = Unicode for Telephone */}
+            <div className="lg:hidden flex flex-col justify-end">
+              <button onClick={toggleNavBar} className="p-4">
+                {mobileDrawerOpen ? <X /> : <Menu />}
+              </button>
+            </div>
+
+            {/*Mobile items */}
+            {mobileDrawerOpen && (
+              <div className="lg:hidden fixed right-0 z-20 bg-gray-500 w-full p-12 flex flex-col justify-center items-center">
+                <ul>
+                  <NavItems />
+                </ul>
+              </div>
+            )}
+          </div>
+          <p className="font-semibold text-base sm:text-xl text-center sm:text-left">
+            Want to Connect with us?
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left mt-2 sm:mt-0">
+            <span className="text-sm sm:text-base">
+              {" "}
+              &#9993; Mail us: support@insurezella.com{" "}
+            </span>
+            <span className="mt-2 sm:mt-0 sm:ml-8 text-sm sm:text-base">
+              &#9742; Call us: (877) 327 0774
+            </span>
           </div>
         </div>
       </div>
@@ -36,32 +59,12 @@ const NavBar = () => {
             <img src={logo} alt="Logo" className="h-auto w-16 rounded-lg" />
           </a>
         </div>
-        {/*
-        - MOVE LOGO ABOVE IN CASE OF SM TO LG
-        - IN CASE OF SM TO LG - HIDDEN.
-        - IN CASE OF LG - FLEX */}
+
         {/* Middle Web Menu */}
         <div className="flex-grow flex justify-center">
           <ul className="hidden lg:flex space-x-4">
             <NavItems />
           </ul>
-        </div>
-        {/* Middle Mobile menu */}
-        <div>
-          <div className="lg:hidden sm:flex flex-col justify-end">
-            <button onClick={toggleNavBar} className="p-4">
-              {mobileDrawerOpen ? <X /> : <Menu />}
-            </button>
-          </div>
-
-          {/* Adds mobile items */}
-          {mobileDrawerOpen && (
-            <div className="fixed right-0 z-20 bg-gray-500 w-full p-12 flex flex-col justify-center items-center lg:hidden">
-              <ul>
-                <NavItems />
-              </ul>
-            </div>
-          )}
         </div>
         {/* Right Button */}
         <div className="flex-shrink-0 mr-28">
