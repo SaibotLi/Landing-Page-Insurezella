@@ -2,7 +2,7 @@ import { heroImg } from "../images";
 
 const Hero = () => {
   return (
-    <div className="flex items-center bg-gray-300">
+    <div id="home" className="flex items-center bg-gray-300 mb-4">
       <div className="w-1/2 pl-60 flex flex-col space-y-20">
         <h1 className="font-bold text-blue-600 text-6xl">
           YOUR GUIDE TO <br />
