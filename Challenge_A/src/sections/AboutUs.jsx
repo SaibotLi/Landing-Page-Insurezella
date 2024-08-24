@@ -2,7 +2,7 @@ import { aboutUsImg, iconAbout1, iconAbout2 } from "../images";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="bg-white mx-40 my-4">
+    <section id="about" className="bg-white mx-40">
       {/* Flex container for the image and text */}
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
         {/* Image container */}
@@ -26,13 +26,11 @@ const AboutUs = () => {
             ABOUT INSURELLA
           </button>
           <div className="flex justify-end space-x-8">
-            <div className="flex items-center">
+            <div className="flex items-center justify-center space-x-4">
               <img src={iconAbout1} alt="icon1" />
               <p className="font-bold ml-4 text-right">
                 Save Money <br /> Compare Plans
               </p>
-            </div>
-            <div className="flex items-center">
               <img src={iconAbout2} alt="icon2" />
               <p className="font-bold ml-4 text-right">
                 Licensed <br /> Agents
