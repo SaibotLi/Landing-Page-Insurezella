@@ -26,13 +26,7 @@ const FindInsurance = () => {
               className="flex flex-col mb-4 justify-center border-2 items-center bg-white shadow-lg shadow-gray-400 rounded-lg p-4 w-60 h-60 font-semibold"
               key={icon.alt}
             >
-              <img
-                src={icon.src}
-                alt={icon.alt}
-                width={icon.width}
-                height={icon.height}
-                className="mx-auto"
-              />
+              <img src={icon.src} alt={icon.alt} className="mx-auto" />
               <p
                 className="mt-2 text-center text-2xl"
                 dangerouslySetInnerHTML={{
@@ -51,12 +45,7 @@ const FindInsurance = () => {
             className="flex flex-col justify-center items-center bg-white shadow-lg shadow-gray-400 rounded-lg p-4 w-60 h-60 font-semibold"
             key={icon.alt}
           >
-            <img
-              src={icon.src}
-              alt={icon.alt}
-              width={icon.width}
-              height={icon.height}
-            />
+            <img src={icon.src} alt={icon.alt} />
             <p
               className="mt-2 text-center text-2xl"
               dangerouslySetInnerHTML={{

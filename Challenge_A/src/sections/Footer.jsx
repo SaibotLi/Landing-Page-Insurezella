@@ -88,6 +88,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="hidden lg:flex lg:bg-blue-600 lg:w-full lg:h-20"></div>
     </footer>
   );
 };
