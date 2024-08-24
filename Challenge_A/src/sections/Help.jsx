@@ -43,20 +43,24 @@ const Help = () => {
       </div>
 
       {/* Web View: Grid Layout */}
-      <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-4 lg:max-w-4xl lg:w-full">
+      <div className="hidden lg:grid lg:place-items-center lg:grid-cols-2 lg:gap-x-8 lg:gap-y-4 lg:w-full mx-auto">
         {helpImgs.map((img) => (
           <div
-            className="flex flex-col shadow-gray-400 w-80 h-auto overflow-hidden p-4"
+            className="flex flex-col shadow-gray-400 w-96 h-auto overflow-hidden p-4"
             key={img.alt}
           >
             <img
               src={img.src}
               alt={img.alt}
-              className="w-full h-40 object-cover mb-4"
+              className="self-center w-full h-40 object-cover mb-4"
             />
-            <h2 className="text-xl font-semibold mb-2">{img.title}</h2>
-            <p className="text-gray-600 text-md mb-4">{img.description}</p>
-            <span className="flex items-center text-blue-600 cursor-pointer">
+            <h2 className="text-xl text-gray-700 mt-4 font-semibold mb-2 ml-4">
+              {img.title}
+            </h2>
+            <p className="text-gray-600 text-md mb-4 ml-4 mt-4">
+              {img.description}
+            </p>
+            <span className="flex items-center mt-4 text-blue-700 ml-4 cursor-pointer">
               Compare plans
               <span className="ml-2 text-xl">→</span>
             </span>
