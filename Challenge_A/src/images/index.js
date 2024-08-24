@@ -15,6 +15,11 @@ import iconPickInsurance4 from "./medicare-advantage-icon.png";
 import iconPickInsurance5 from "./obamacare-icon.png";
 import iconPickInsurance6 from "./short-term-icon.png";
 import learnImg from "./protecting.png";
+import helpImg1 from "./doctor.jpg";
+import helpImg2 from "./family-together.jpg";
+import helpImg3 from "./medical-appointment.jpg";
+import helpImg4 from "./man-signing.jpg";
+
 export {
   logo,
   heroImg,
@@ -33,4 +38,8 @@ export {
   iconPickInsurance5,
   iconPickInsurance6,
   learnImg,
+  helpImg1,
+  helpImg2,
+  helpImg3,
+  helpImg4,
 };
