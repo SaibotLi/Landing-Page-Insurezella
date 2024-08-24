@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="flex-col justify-self-end mt-4">
           {/* H2, column with <img> icon </img> + <span> */}
           <h2 className="text-blue-900 font-semibold text-2xl">Services</h2>
-          <div className="flex-col space-y-1 mt-4 mr-10">
+          <div className="flex-col space-y-2 mt-4 mr-10">
             <div className="flex space-x-2">
               <img src="" alt="icon" />
               <span>Health Insurance</span>
