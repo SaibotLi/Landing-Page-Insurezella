@@ -5,6 +5,7 @@ import AboutUs from "./sections/AboutUs";
 import PickInsurance from "./sections/PickInsurance";
 import Learn from "./sections/Learn";
 import Help from "./sections/Help";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <Learn />
         <Help />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 };
