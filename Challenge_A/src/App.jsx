@@ -3,6 +3,7 @@ import NavBar from "./sections/NavBar";
 import FindInsurance from "./sections/FindInsurance";
 import AboutUs from "./sections/AboutUs";
 import PickInsurance from "./sections/PickInsurance";
+import Learn from "./sections/Learn";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <FindInsurance />
         <AboutUs />
         <PickInsurance />
+        <Learn />
       </main>
       <footer></footer>
     </>

@@ -3,14 +3,14 @@ import { aboutUsImg, iconAbout1, iconAbout2 } from "../images";
 const AboutUs = () => {
   return (
     <section id="about" className="bg-white mx-40">
-      {/* Flex container for the image and text */}
+      {/* Container for Img and Texts */}
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
-        {/* Image container */}
+        {/* Container for Img */}
         <div className="lg:w-1/2">
           <img src={aboutUsImg} alt="aboutUsImg" className="w-full lg:w-auto" />
         </div>
 
-        {/* Text container */}
+        {/* Container for Text */}
         <div className="flex flex-col items-end space-y-8 w-full lg:w-1/2 lg:ml-8 lg:space-y-12 md:w-2/3 md:self-end md:mr-0 ml-auto">
           <h1 className="font-semibold text-gray-800 text-4xl text-right">
             Committed to help you <br /> find the right plan
@@ -44,4 +44,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-``;

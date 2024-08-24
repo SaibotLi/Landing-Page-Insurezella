@@ -14,7 +14,7 @@ import iconPickInsurance3 from "./life-insurance-icon.png";
 import iconPickInsurance4 from "./medicare-advantage-icon.png";
 import iconPickInsurance5 from "./obamacare-icon.png";
 import iconPickInsurance6 from "./short-term-icon.png";
-
+import learnImg from "./protecting.png";
 export {
   logo,
   heroImg,
@@ -32,4 +32,5 @@ export {
   iconPickInsurance4,
   iconPickInsurance5,
   iconPickInsurance6,
+  learnImg,
 };
