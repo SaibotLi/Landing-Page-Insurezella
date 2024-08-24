@@ -115,3 +115,28 @@ export const helpImgs = [
       "Medicare Advantage Plans cover all original Medicare services, and some offer drug, vision, hearing, dental or wellness coverage.",
   },
 ];
+
+import { Umbrella, Heart, LifeBuoy, Shield, Activity } from "lucide-react";
+
+export const insuranceTypes = [
+  {
+    Icon: Umbrella,
+    label: "Health Insurance",
+  },
+  {
+    Icon: Heart,
+    label: "Life Insurance",
+  },
+  {
+    Icon: LifeBuoy,
+    label: "Medicare Supplement",
+  },
+  {
+    Icon: Shield,
+    label: "Medicare Advantage",
+  },
+  {
+    Icon: Activity,
+    label: "(ACA) Obamacare",
+  },
+];
