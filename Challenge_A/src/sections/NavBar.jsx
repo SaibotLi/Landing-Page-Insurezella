@@ -13,15 +13,15 @@ const NavBar = () => {
   return (
     <header className="w-full">
       {/* Upper-Nav */}
-      <div className="bg-blue-500 p-3">
+      <div className="bg-indigo-600 lg:bg-blue-500 p-2">
         <div className="flex items-center text-center justify-around text-white">
-          <a className="lg:hidden flex" href="#home">
+          <a className="lg:hidden flex translate-y-2/4" href="#home">
             <img src={logo} alt="Logo" className="h-auto w-60" />
           </a>
           {/* Mobile menu */}
           <div>
             <div className="lg:hidden flex flex-col justify-end">
-              <button onClick={toggleNavBar} className="p-4">
+              <button onClick={toggleNavBar} className="py-4 px-8">
                 {mobileDrawerOpen ? <X /> : <Menu />}
               </button>
             </div>
@@ -35,11 +35,11 @@ const NavBar = () => {
               </div>
             )}
           </div>
-          <p className="font-semibold text-base sm:text-xl text-center sm:text-left">
+          <p className="font-semibold text-base sm:text-xl text-center">
             Want to Connect with us?
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center text-center sm:text-left mt-2 sm:mt-0">
+          <div className="flex flex-col sm:flex-row items-center text-center mt-2 sm:mt-0">
             <span className="text-sm sm:text-base">
               {" "}
               &#9993; Mail us: support@insurezella.com{" "}
