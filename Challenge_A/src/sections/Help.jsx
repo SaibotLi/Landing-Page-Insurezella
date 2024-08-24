@@ -57,7 +57,7 @@ const Help = () => {
             <h2 className="text-xl font-semibold mb-2">{img.title}</h2>
             <p className="text-gray-600 text-md mb-4">{img.description}</p>
             <span className="flex items-center text-blue-600 cursor-pointer">
-              View plans
+              Compare plans
               <span className="ml-2 text-xl">→</span>
             </span>
           </div>
