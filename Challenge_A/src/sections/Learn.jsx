@@ -3,7 +3,7 @@ import { learnImg } from "../images";
 const Learn = () => {
   return (
     <section
-      id="about"
+      id="learn"
       className="bg-white mx-4 my-4 md:my-8 lg:my-12 xl:my-20 lg:mx-20 xl:mx-40"
     >
       {/* Container for Img and Texts */}
