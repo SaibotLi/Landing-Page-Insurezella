@@ -13,14 +13,14 @@ const NavBar = () => {
   return (
     <header className="w-full">
       {/* Upper-Nav */}
-      <div className="bg-indigo-600 lg:bg-blue-500 p-2">
+      <div className="bg-indigo-600 md:bg-blue-500 p-2">
         <div className="flex items-center text-center justify-around text-white">
-          <a className="lg:hidden flex translate-y-2/4" href="#home">
-            <img src={logo} alt="Logo" className="h-auto w-60" />
+          <a className="md:hidden flex translate-y-10" href="#home">
+            <img src={logo} alt="Logo" className="h-auto w-40 min-w-12" />
           </a>
           {/* Mobile menu */}
           <div>
-            <div className="lg:hidden flex flex-col justify-end">
+            <div className="md:hidden flex flex-col justify-end">
               <button onClick={toggleNavBar} className="py-4 px-8">
                 {mobileDrawerOpen ? <X /> : <Menu />}
               </button>
@@ -28,7 +28,7 @@ const NavBar = () => {
 
             {/*Mobile items */}
             {mobileDrawerOpen && (
-              <div className="lg:hidden fixed right-0 z-20 bg-gray-500 w-full p-12 flex flex-col justify-center items-center">
+              <div className="md:hidden fixed right-0 z-20 bg-gray-500 w-full p-12 flex flex-col justify-center items-center">
                 <ul>
                   <NavItems />
                 </ul>
@@ -52,7 +52,7 @@ const NavBar = () => {
       </div>
 
       {/* Lower-Nav */}
-      <nav className="hidden lg:flex sticky top-0 z-50 bg-gray-100 items-center justify-between px-4 py-4">
+      <nav className="hidden md:flex sticky top-0 z-50 bg-gray-100 items-center justify-between px-4 py-4">
         {/* Left Logo */}
         <div className="flex-shrink-0 ml-28">
           <a href="#home">
@@ -62,7 +62,7 @@ const NavBar = () => {
 
         {/* Middle Web Menu */}
         <div className="flex-grow flex justify-center">
-          <ul className="hidden lg:flex space-x-4">
+          <ul className="hidden md:flex space-x-4">
             <NavItems />
           </ul>
         </div>
